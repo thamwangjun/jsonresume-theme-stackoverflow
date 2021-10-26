@@ -6,7 +6,7 @@
   <section id="projects">
     {{#each resume.projects}}
     <section class="project-item">
-      {{#if summary}}
+      {{#if description}}
         {{#if @first}}
         <input id="project-item-{{@index}}" type="checkbox" class="toggle-item" checked="checked" />
         {{else}}
@@ -61,8 +61,8 @@
       </ul>
       {{/if}}
       <div class="item">
-        {{#if summary}}
-          <div class="summary">{{paragraphSplit summary}}</div>
+        {{#if description}}
+          <div class="summary">{{paragraphSplit description}}</div>
         {{/if}}
         {{#if highlights.length}}
         <ul class="highlights">
